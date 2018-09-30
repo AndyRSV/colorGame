@@ -1,0 +1,21 @@
+body {
+  background-color: #232323;
+
+}
+
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.square{
+  width: 30%;
+  background: palegoldenrod;
+  margin: 1.666%;
+  padding-bottom: 30%;
+}
+
+h1{
+  color: white;
+  text-align: center;
+}
