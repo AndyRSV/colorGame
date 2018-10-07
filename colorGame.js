@@ -33,7 +33,7 @@ easyBtn.addEventListener("click", function(){
 hardBtn.addEventListener("click", function(){
   easyBtn.classList.remove("selected");
   hardBtn.classList.add("selected");
-  numSquares = 3;
+  numSquares = 6;
   colors = generateRandomColors(numSquares);
   pickedColor = pickColor();
   colorDisplay.textContent = pickedColor;
@@ -54,11 +54,13 @@ resetButton.addEventListener("click",function(){
   pickedColor = pickColor();
   //change color display to match picked color
   colorDisplay.textContent = pickedColor;
+  this.textContent = "New Colors"
   //change colors of squares
   for(var i = 0; i<squares.length;i++){
     squares[i].style.backgroundColor = colors[i];
-
+    
   }
+  
   messageDisplay.textContent = "";
   h1.style.background = "steelblue";
 
